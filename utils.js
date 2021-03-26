@@ -55,4 +55,3 @@ export function doesUserWin(player, computer) {
         return 'victory';
     }
 }
-console.log(doesUserWin('boulder', 'parchment'));

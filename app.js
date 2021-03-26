@@ -4,6 +4,7 @@ import { doesUserWin } from './utils.js';
 
 const throwButton = document.getElementById('throw-button');
 const resetButton = document.getElementById('reset-button');
+const body = document.getElementById('body');
 
 
 const victories = document.getElementById('victories');
@@ -45,6 +46,16 @@ throwButton.addEventListener('click', () => {
     victories.textContent = `${lVictories}`;
     losses.textContent = `${lLosses}`;
     total.textContent = `${lTotal}`;
+
+    if (lVictories < lLosses) {
+        body.classList.add('loser');
+        body.classList.remove('winner');
+    }
+
+    if (lVictories > lLosses) {
+        body.classList.add('winner');
+        body.classList.remove('loser');
+    }
 });
 
 resetButton.addEventListener('click', () => {
