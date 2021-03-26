@@ -3,6 +3,7 @@ import { getRandomThrow } from './utils.js';
 import { doesUserWin } from './utils.js';
 
 const throwButton = document.getElementById('throw-button');
+const resetButton = document.getElementById('reset-button');
 
 
 const victories = document.getElementById('victories');
@@ -25,13 +26,13 @@ throwButton.addEventListener('click', () => {
     const userResults = doesUserWin(userChoice, computerResults);
 
     if (userResults === 'draw') {
-        alert('Draw');
+        
         lTotal++;
         lDraws++;
     }
 
     if (userResults === 'victory') {
-        alert('Victory');
+        
         lTotal++;
         lVictories++;
     }
@@ -44,4 +45,8 @@ throwButton.addEventListener('click', () => {
     victories.textContent = `${lVictories}`;
     losses.textContent = `${lLosses}`;
     total.textContent = `${lTotal}`;
+});
+
+resetButton.addEventListener('click', () => {
+    location.reload();
 });
