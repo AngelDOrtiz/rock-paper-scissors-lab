@@ -1,59 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link href='https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='styles/reset.css'>
+    <link rel='stylesheet' href='styles/style.css'>
+    <link rel='stylesheet' href='styles/home.css'>
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
-    </header>
+    
     <main>
-        <section class="main-section">
+        <section class='main-section'>
             
             <h2>
                 Boulder Parchment Shears!
             </h2>
-            <section class="selectors">
-                <label id="boulder">
-                    <input type="radio" name="choice">
-                    <img src="assets/boulder.jpg">
+            <section class='selectors'>
+                <label id='boulder'>
+                    <input type='radio' name='choice' value='boulder'>
+                    <img src='assets/boulder.jpg'>
                     Boulder
                 </label>
                 
-                <label id="parchment">
-                    <input type="radio" name="choice">
-                    <img src="assets/parchment.jpg">
+                <label id='parchment'>
+                    <input type='radio' name='choice' value='parchment'>
+                    <img src='assets/parchment.jpg'>
                     Parchment
                 </label>
                 
-                <label id="shears">
-                    <input type="radio"name="choice">
-                    <img src="assets/shears.jpg">
+                <label id='shears'>
+                    <input type='radio'name='choice' value='shears'>
+                    <img src='assets/shears.jpg'>
                     Shears
                 </label>
               
             </section>
             <section>
-                <button id="throw-button">Throw!</button>
+                <button id='throw-button'>Throw!</button>
             </section>
+            <div class='results'>
+                <span>Victories:<field id='victories'> </field></span>
+                <hr>
+                <span>Losses:<field id='losses'> </field></span>
+                <hr>
+                <span>Total:<field id='total'> </field></span>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class='copy gutter-right'>&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type='module' src='app.js'></script>
 </body>
 
 </html>
